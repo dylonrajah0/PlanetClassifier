@@ -1,0 +1,32 @@
+Dependencies: 
+
+pip install matplotlib
+pip install scikit-learn
+pip install numpy
+pip install seaborn
+
+
+Install CUDA and cuDNN:
+
+https://developer.nvidia.com/cuda-downloads CUDA
+
+Run the Installer: Follow the on-screen instructions to install CUDA.
+
+https://developer.nvidia.com/cudnn -- Library
+
+Extract the cuDNN archive and place the files in the corresponding directories in the CUDA installation directory. The typical steps involve copying bin, include, and lib folders from the cuDNN package to the CUDA directory (usually C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0 or similar, depending on your CUDA version).
+
+Install TensorFlow:
+
+pip install tensorflow 
+
+Configure Environment Variables:
+
+Update PATH: Add the CUDA bin directory (e.g., C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\bin) to your system's PATH environment variable.
+
+
+Verify Installation:
+
+Run testGPU.py in the terminal (python testGPU.py)
+
+This script should output the name of the GPU if TensorFlow can access it. If it doesn’t, it means TensorFlow is not set up to use the GPU.
